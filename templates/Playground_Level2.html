@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<style>
+			body {
+				background-color: {{setColor}};
+			}
+			.box {
+				background-color: blue;
+				color: white;
+				height: 100px;
+				width: 100px;
+				margin: 5px;
+				padding: 5px;
+				display: inline-block;
+			}
+		</style>
+	</head>
+	<body>
+    	<h1>Dependent For-Loop Example:
+    		{% for i in range(0,numberInput,1): %}
+    		<div class = box>Box</div>
+    		{% endfor %}
+    	</h1>
+	</body>
+</html>

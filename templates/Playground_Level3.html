@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<style>
+			body {
+				background-color: {{setColor}};
+			}
+			.box {
+				background-color: {{colorInput}};
+				color: white;
+				height: 100px;
+				width: 100px;
+				margin: 5px;
+				padding: 5px;
+				display: inline-block;
+			}
+		</style>
+	</head>
+	<body>
+    	<!--<h1>The set color is: {{setColor}}.</h1>
+    	<h1>The input color is: {{colorInput}}.</h1>
+    	<h1>The number integer input is: {{numberInput}}.</h1>
+    	<h1>Independent Print Expression Example: {% print (3) %}</h1>
+    	<h1>Dependent Print Expression Example: none yet</h1>
+    	<h1>Independent For-Loop Example:
+    		{% for i in range(0,3,1): %}
+    		<p>Independent Loop Printout</p>
+    		{% endfor %}
+    	</h1>-->
+    	<h1>Dependent For-Loop Example:
+    		{% for i in range(0,numberInput,1): %}
+    		<div class = box>Box</div>
+    		{% endfor %}
+    	</h1>
+    	<!--<div class = box>Box</div>
+    	<div class = box>Box</div>
+    	<div class = box>Box</div>-->
+	</body>
+</html>
